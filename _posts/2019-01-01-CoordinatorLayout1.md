@@ -168,10 +168,15 @@ app:layout_behavior="@string/appbar_scrolling_view_behavior"
 使用AppBarLayout的关键点是，在Child里面设置属性layout_scrollFlags
 
 layout_scrollFlags可以设置下面这5个参数
+
 **scroll**
+
 **snap**
+
 **enterAlways**
+
 **enterAlwaysCollapsed**
+
 **exitUntilCollapsed**
 
 - **scroll**
@@ -188,7 +193,6 @@ app:layout_scrollFlags="scroll|snap"
 
 - **enterAlways**
 这个参数的作用是滑动Child在任何位置向下滑动时都触发该Child的向下滑动
-
 ```
 app:layout_scrollFlags="scroll|enterAlways"
 ```
@@ -244,15 +248,16 @@ app:layout_scrollFlags="scroll|exitUntilCollapsed"
 下面简单介绍一下CollapsingToolbarLayout的几个属性
 
 - **collapsedTitleTextAppearance**，**expandedTitleTextAppearance**
-这两个可以定制标题收起和展开的字体样式
+    这两个可以定制标题收起和展开的字体样式
 - **contentScrim**
-可以设置Content scrim，参数可以是color和drawable，简单来说就是收起状态Toolbar的背景
+    可以设置Content scrim，参数可以是color和drawable，简单来说就是收起状态Toolbar的背景
 - **layout_collapseMode**
 说明CollapsingToolbarLayout的child可以设置为两种模式parallax和pin
-    - **pin**
-就是简单的固定模式
-    - **parallax**
-表示视差模式，可以根据需要搭配**layout_collapseParallaxMultiplier**食用，**layout_collapseParallaxMultiplier**的数值是0~1
+  - **pin**
+    就是简单的固定模式
+  - **parallax**
+    表示视差模式，可以根据需要
+    **layout_collapseParallaxMultiplier**食用，**layout_collapseParallaxMultiplier**的数值是0~1
  0表示滚动没有视差，意思就是完全跟着下面的滚动view，1表示不动
 ![0.gif](/assets/img/coordinatorlayout1/6.gif)
 ![1.gif](/assets/img/coordinatorlayout1/7.gif)
@@ -260,7 +265,8 @@ app:layout_scrollFlags="scroll|exitUntilCollapsed"
 
 **哦~~~谷歌文档里还提醒，不要在toolbar运行时手动添加view到toolbar里面**
 
-##总结
+## 总结
+
 这篇文章主要讲了CoordinatorLayout的特色，以及使用的几个方法。
 介绍了一下跟CoordinatorLayout配合使用的几个控件的基本使用方法。但是这样的基本搭配很有可能无法达到开发者的需求，很多细节还是需要自己定制。要达到这样的要求，就需要去掌握Behaviors的使用了。
 
