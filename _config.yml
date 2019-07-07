@@ -1,1 +1,103 @@
-theme: jekyll-theme-cayman
+# SITE CONFIGURATION
+baseurl: ""
+url: "https://xugter.xyz"
+title: Xugter # site's title
+description: "Android Developer" # used by search engines
+
+defaults:
+  - 
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      image: assets/img/triangle.png # seo tag
+
+# THEME-SPECIFIC CONFIGURATION
+theme_settings:
+  # Meta
+  avatar: assets/img/triangle.png
+  color_image: /assets/img/lineart.png # In post when you set color
+  favicon: assets/favicon.ico
+
+  # Header and footer text
+  header_text: Xugter Blog</code>
+  header_feature_image: assets/img/pexels/triangular.jpeg
+  footer_text: >
+    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+
+  # Icons
+  rss: false  # Make sure you created a feed.xml with feed.xml layout
+  email_address: xubomain@163.com
+  behance:
+  bitbucket:
+  dribbble:
+  facebook:
+  flickr:
+  gitlab:
+  github: "xugter"
+  google_plus:
+  instagram:
+  keybase:
+  linkedin:  # Full URL
+  pinterest:
+  reddit:
+  soundcloud:
+  stack_exchange:  # Full URL
+  steam:
+  tumblr:
+  twitter: # "twitter username"
+  vimeo:
+  wordpress:
+  youtube:
+
+  # Sharing options
+  share_buttons:
+    facebook: 
+    twitter: 
+    tumblr:
+    pinterest:
+    pocket:
+    reddit: 
+    linkedin:
+    wordpress:
+    email: 
+
+  # Scripts / Features 
+  google_analytics: # Tracking ID, e.g. "UA-000000-01"
+  disqus_shortname:
+  katex: true # Enable if using math markup
+
+  # Localization strings
+  str_follow_on: "Follow on"
+  str_rss_follow: "Follow RSS feed"
+  str_share_on: "Share on"
+  str_add_to: "Add to"
+  str_email: "Email"
+  str_tweet: "Tweet"
+  str_pin_it: "Pin it"
+  str_next_post: "上一篇"
+  str_previous_post: "下一篇"
+  str_next_page: "下一页"
+  str_previous_page: "上一页"
+  str_javascript_required_disqus: "Please enable JavaScript to view comments."
+
+  # Post navigation
+  post_navigation: true
+
+  # Colours, typography and padding
+  # Open the "_sass > base" folder, and open "_variables.scss"
+
+# PAGINATION
+paginate: 10
+paginate_path: "blog/page:num"
+
+# BUILD SETTINGS
+markdown: kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: :compressed
+plugins: [jekyll-paginate, jekyll-seo-tag]
+exclude: [".jekyll-cache", "Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", ".idea",
+          "LICENSE", "README.md", "screenshot.png", "assets/package.json", "assets/node_modules", "assets/gulpfile.js"]
+# theme: type-on-strap # Uncomment if using the theme as a jekyll theme gem
+remote_theme: sylhare/Type-on-Strap # If using as a remote_theme in github
