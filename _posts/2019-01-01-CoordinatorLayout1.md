@@ -58,6 +58,7 @@ CoordinatorLayout主要提供了三种方式来实现child之间的互动:
     android:background="@color/colorPrimary"
     app:layout_insetEdge="top" />
 ```
+
 2 . 然后在另一个观察的child B的设置两个参数，layout_anchor和layout_anchorGravity
 
 ```
@@ -70,8 +71,8 @@ CoordinatorLayout主要提供了三种方式来实现child之间的互动:
 ```
 
 效果如下，B就会随着A的移动而跟着移动
-![anchor.gif](https://ae01.alicdn.com/kf/HTB1PTd8Xrj1gK0jSZFu5jcrHpXaI.gif)
 
+![anchor.gif](https://ae01.alicdn.com/kf/HTB1PTd8Xrj1gK0jSZFu5jcrHpXaI.gif)
 
 ### 2. insetEdge
 
