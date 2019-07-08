@@ -262,6 +262,7 @@ app:layout_scrollFlags="scroll|exitUntilCollapsed"
     表示视差模式，可以根据需要
     **layout_collapseParallaxMultiplier**食用，**layout_collapseParallaxMultiplier**的数值是0~1
  0表示滚动没有视差，意思就是完全跟着下面的滚动view，1表示不动
+ 
 ![0.gif](https://ae01.alicdn.com/kf/HTB1MVB9XAL0gK0jSZFA5jcA9pXan.gif)
 ![1.gif](https://ae01.alicdn.com/kf/HTB1W_N7XEY1gK0jSZFM5jaWcVXaE.gif)
 
