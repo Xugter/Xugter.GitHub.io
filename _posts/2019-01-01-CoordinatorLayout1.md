@@ -44,6 +44,7 @@ CoordinatorLayout主要提供了三种方式来实现child之间的互动:
 
 使用步骤:
 1. 先设置一个被观察的child A的id
+
 ```
 <com.xugter.cooridnatorlayoutstudy.other.TouchView
     android:id="@+id/view_host"
@@ -55,6 +56,7 @@ CoordinatorLayout主要提供了三种方式来实现child之间的互动:
 ```
 
 2. 然后在另一个观察的child B的设置两个参数，layout_anchor和layout_anchorGravity
+
 ```
 <View
     android:layout_width="80dp"
@@ -76,7 +78,9 @@ CoordinatorLayout主要提供了三种方式来实现child之间的互动:
 简单说明：child A 通过layout_insetEdge来设置插入CoordinatorLayout的方向，child B通过设置layout_dodgeInsetEdges来躲避来自相同方向的A，这样就可以避免产生重叠。
 
 使用步骤:
-1. 先在被观察的child A中设置参数layout_insetEdge
+
+1 . 先在被观察的child A中设置参数layout_insetEdge
+
 ```
 <com.xugter.cooridnatorlayoutstudy.other.TouchView
     android:id="@+id/view_host"
@@ -86,7 +90,9 @@ CoordinatorLayout主要提供了三种方式来实现child之间的互动:
     android:background="@color/colorPrimary"
     app:layout_insetEdge="top" />
 ```
-2. 在观察的child B中设置参数layout_dodgeInsetEdges
+
+2 . 在观察的child B中设置参数layout_dodgeInsetEdges
+
 ```
 <View
     android:layout_width="100dp"
@@ -110,6 +116,7 @@ CoordinatorLayout主要提供了三种方式来实现child之间的互动:
 而Snackbar自带app:layout_insetEdge="bottom"，所以当Snackbar出现的时候FloatingActionButton能发生躲避行为
 
 我们还可以自己加一个View来验证一下Snackbar是自带app:layout_insetEdge="bottom"
+
 ```
 <View
     android:layout_width="40dp"
@@ -164,10 +171,15 @@ app:layout_behavior="@string/appbar_scrolling_view_behavior"
 使用AppBarLayout的关键点是，在Child里面设置属性layout_scrollFlags
 
 layout_scrollFlags可以设置下面这5个参数
+
 **scroll**
+
 **snap**
+
 **enterAlways**
+
 **enterAlwaysCollapsed**
+
 **exitUntilCollapsed**
 
 - **scroll**
@@ -184,7 +196,6 @@ app:layout_scrollFlags="scroll|snap"
 
 - **enterAlways**
 这个参数的作用是滑动Child在任何位置向下滑动时都触发该Child的向下滑动
-
 ```
 app:layout_scrollFlags="scroll|enterAlways"
 ```
