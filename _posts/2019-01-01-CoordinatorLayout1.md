@@ -23,8 +23,8 @@ CoordinatorLayout is intended for two primary use cases:
 加强的点是CoordinatorLayout可以给它的child之间提供各种交互特性，简单来说就是一个child可以根据另一个child的状态来相应的更新自己的状态，大部分情况都是位置的更新。所以应该叫协调布局？？？
 
 先看几个Demo，自己感受一下，看一下这个疗效怎么样
-![1.gif](https://cdn.sinaimg.cn.52ecy.cn/large/005BYqpgly1g4s9yxh0txj31c00u0akj.jpg)
-![3.gif](/assets/img/coordinatorlayout1/2.gif)
+![1.gif](https://ae01.alicdn.com/kf/HTB1bo48XAH0gK0jSZPi5javapXaI.gif)
+![3.gif](https://ae01.alicdn.com/kf/HTB11O87XuL2gK0jSZFm5jc7iXXaq.gif)
 
 这里所有的代码都已经放在[Github](https://github.com/Xugter/CooridnatorLayoutStudy)
 
@@ -69,7 +69,7 @@ CoordinatorLayout主要提供了三种方式来实现child之间的互动:
 ```
 
 效果如下，B就会随着A的移动而跟着移动
-![anchor.gif](/assets/img/coordinatorlayout1/3.gif)
+![anchor.gif](https://ae01.alicdn.com/kf/HTB1PTd8Xrj1gK0jSZFu5jcrHpXaI.gif)
 
 
 ### 2. insetEdge
@@ -107,7 +107,7 @@ CoordinatorLayout主要提供了三种方式来实现child之间的互动:
 [FloatingActionButton](https://developer.android.com/reference/android/support/design/widget/FloatingActionButton)和[Snackbar](https://developer.android.com/reference/android/support/design/widget/Snackbar)
 
 这两个控件可以产生如下的交互
-![insetEdge.gif](/assets/img/coordinatorlayout1/4.gif)
+![insetEdge.gif](https://ae01.alicdn.com/kf/HTB1T4t7XuL2gK0jSZPh5jahvXXaL.gif)
 
 
 原因是FloatingActionButton自带app:layout_dodgeInsetEdges="bottom"，
@@ -131,7 +131,7 @@ CoordinatorLayout主要提供了三种方式来实现child之间的互动:
 
 便于理解我采用了最简单的结构，AppBarLayout+NestedScrollView,其中NestedScrollView可以由其他实现了NestedScrollingChild的控件代替
 
-如下:![几个已经实现了NestedScrollingChild的控件](/assets/img/coordinatorlayout1/5.png)
+如下:![几个已经实现了NestedScrollingChild的控件](https://ae01.alicdn.com/kf/HTB1kQd8Xq61gK0jSZFl760DKFXaB.png)
 
 其中我们最常用的大概就是下面这两货了，注意ScrollView是不可以的
 - NestedScrollView
@@ -259,8 +259,8 @@ app:layout_scrollFlags="scroll|exitUntilCollapsed"
     表示视差模式，可以根据需要
     **layout_collapseParallaxMultiplier**食用，**layout_collapseParallaxMultiplier**的数值是0~1
  0表示滚动没有视差，意思就是完全跟着下面的滚动view，1表示不动
-![0.gif](/assets/img/coordinatorlayout1/6.gif)
-![1.gif](/assets/img/coordinatorlayout1/7.gif)
+![0.gif](https://ae01.alicdn.com/kf/HTB1MVB9XAL0gK0jSZFA5jcA9pXan.gif)
+![1.gif](https://ae01.alicdn.com/kf/HTB1W_N7XEY1gK0jSZFM5jaWcVXaE.gif)
 
 
 **哦~~~谷歌文档里还提醒，不要在toolbar运行时手动添加view到toolbar里面**
