@@ -23,6 +23,7 @@ CoordinatorLayout is intended for two primary use cases:
 加强的点是CoordinatorLayout可以给它的child之间提供各种交互特性，简单来说就是一个child可以根据另一个child的状态来相应的更新自己的状态，大部分情况都是位置的更新。所以应该叫协调布局？？？
 
 先看几个Demo，自己感受一下，看一下这个疗效怎么样
+
 ![1.gif](https://ae01.alicdn.com/kf/HTB1bo48XAH0gK0jSZPi5javapXaI.gif)
 ![3.gif](https://ae01.alicdn.com/kf/HTB11O87XuL2gK0jSZFm5jc7iXXaq.gif)
 
@@ -107,6 +108,7 @@ CoordinatorLayout主要提供了三种方式来实现child之间的互动:
 [FloatingActionButton](https://developer.android.com/reference/android/support/design/widget/FloatingActionButton)和[Snackbar](https://developer.android.com/reference/android/support/design/widget/Snackbar)
 
 这两个控件可以产生如下的交互
+
 ![insetEdge.gif](https://ae01.alicdn.com/kf/HTB1T4t7XuL2gK0jSZPh5jahvXXaL.gif)
 
 
