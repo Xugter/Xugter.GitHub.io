@@ -23,7 +23,7 @@ CoordinatorLayout is intended for two primary use cases:
 加强的点是CoordinatorLayout可以给它的child之间提供各种交互特性，简单来说就是一个child可以根据另一个child的状态来相应的更新自己的状态，大部分情况都是位置的更新。所以应该叫协调布局？？？
 
 先看几个Demo，自己感受一下，看一下这个疗效怎么样
-![1.gif](/assets/img/coordinatorlayout1/1.gif)
+![1.gif](https://cdn.sinaimg.cn.52ecy.cn/large/005BYqpgly1g4s9yxh0txj31c00u0akj.jpg)
 ![3.gif](/assets/img/coordinatorlayout1/2.gif)
 
 这里所有的代码都已经放在[Github](https://github.com/Xugter/CooridnatorLayoutStudy)
