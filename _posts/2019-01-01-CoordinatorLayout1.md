@@ -1,7 +1,10 @@
 ---
 layout: post
 title: CoordinatorLayout系列(一):基本使用
-tags: [CoordinatorLayout, Android]
+catalog:  true
+tags:
+    - CoordinatorLayout
+    - Android
 ---
 
 ## 准备
