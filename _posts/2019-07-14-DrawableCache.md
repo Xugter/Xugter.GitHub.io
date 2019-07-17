@@ -65,7 +65,7 @@ ColorDrawable和其他drawable分别是两个缓存
     private final DrawableCache mDrawableCache = new DrawableCache();
     private final DrawableCache mColorDrawableCache = new DrawableCache();
 ```
-至于其他drawable都有些啥，这就有点多了，如下，
+至于其他drawable都有些啥，这就有点多了，如下图，
 
 ![1.jpg](https://ae01.alicdn.com/kf/HTB1UyqFarY1gK0jSZTE760DQVXa5.png)
 
