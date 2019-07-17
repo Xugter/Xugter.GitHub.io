@@ -65,7 +65,7 @@ ColorDrawable和其他drawable分别是两个缓存
     private final DrawableCache mDrawableCache = new DrawableCache();
     private final DrawableCache mColorDrawableCache = new DrawableCache();
 ```
-至于其他drawable都有些啥，这就有点多了，如下图，
+至于其他drawable都有些啥，这就有点多了，如下，
 
 ![1.jpg](https://ae01.alicdn.com/kf/HTB1UyqFarY1gK0jSZTE760DQVXa5.png)
 
@@ -249,7 +249,7 @@ public class ColorDrawable extends Drawable {
 
 那么现在可以大胆的猜想:
 
-**1.** 刚开始的猜想，再进一步获取ConstantState,这两个的ConstantState肯定就是同一个对象了。验证如下图
+**1.** 刚开始的猜想，再进一步获取ConstantState,这两个的ConstantState肯定就是同一个对象了。验证如下
 
 ```
 I bbbb    : ====background cs=android.graphics.drawable.ColorDrawable$ColorState@dfe7bd1
