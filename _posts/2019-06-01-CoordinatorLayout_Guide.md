@@ -11,15 +11,15 @@ tags:
 
 
 #### 1.通过介绍官方的API,实现简单的demo
-[CoordinatorLayout系列(一):基本使用](https://github.com/Xugter/CooridnatorLayoutStudy)
+[CoordinatorLayout系列(一):基本使用](https://xugter.xyz/2019/01/01/CoordinatorLayout1)
 
 ### 第二步:学会自定义behavior
 
 #### 2.先学习Behavior如何使用和各个方法的功能
-[CoordinatorLayout系列(二):Behavior的使用](https://github.com/Xugter/CooridnatorLayoutStudy)
+[CoordinatorLayout系列(二):Behavior的使用](https://xugter.xyz/2019/07/10/CoordinatorLayout2)
 
 #### 3.实践虾米音乐的首页效果
-[CoordinatorLayout系列(三):Behavior的实践](https://github.com/Xugter/CooridnatorLayoutStudy)
+[CoordinatorLayout系列(三):Behavior的实践](https://xugter.xyz/2019/09/12/CoordinatorLayout3)
 
 ### 第三步:脱离CoordinatorLayout，利用Nest机制实现虾米首页
 
